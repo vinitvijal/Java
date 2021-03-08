@@ -1,0 +1,27 @@
+package com.vinit.vijal;
+
+
+// This program is to find area and perimeter of circle
+
+
+import java.util.Scanner;
+
+public class AandP {
+
+
+
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the radius of the Circle : ");
+        float radius = scan.nextFloat();
+        double perimeter, area;
+        perimeter = 2 * 3.14 * radius;
+        area = (3.14 * radius * radius);
+        System.out.println(" Perimeter of Your Circle is " + perimeter);
+        System.out.println(" Area of Your Circle is " + area);
+
+
+    }
+
+
+}
