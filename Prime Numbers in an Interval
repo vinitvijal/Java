@@ -1,0 +1,34 @@
+package com.vinit.vijal;
+
+import java.util.Scanner;
+
+public class Prime {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter Starting Number : ");
+        int  a = scan.nextInt();
+        System.out.print("Enter Last Number : ");
+        int b = scan.nextInt();
+
+
+        int n = a;
+        for (;n <= b; n++){
+
+            float x = n-1;
+            for (;x > 1; x--) {
+                if (n % x == 0) {
+                    break;
+                }
+                else if (x == 2){
+                    System.out.println(n + " is a Prime Number");
+                }
+
+
+            }
+
+
+        }
+
+
+    }
+}
