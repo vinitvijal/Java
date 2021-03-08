@@ -1,0 +1,22 @@
+package com.vinit.vijal;
+
+import java.util.Scanner;
+
+public class compoundInterest {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter your Principal Amount : ");
+        int p = scan.nextInt();
+
+        System.out.print("Enter Your Rate of Interest : ");
+        float r = scan.nextFloat();
+
+        System.out.print("Enter Your Time Period : ");
+        double t = scan.nextDouble();
+
+
+        double ci = p * (Math.pow((1 + r/100) , t));
+
+        System.out.println("Your Coumpound Interest is " + ci);
+    }
+}
