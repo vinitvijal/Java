@@ -1,0 +1,24 @@
+package com.vinit.vijal;
+
+import java.util.Scanner;
+
+public class Divisiblity {
+
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter Your First Number : ");
+        int a = scan.nextInt();
+        System.out.print("Enter Your Second Number : ");
+        int b = scan.nextInt();
+        int remanin = a % b;
+
+        if (remanin == 0){
+            System.out.println(a + " is divisible by " + b);
+        }
+        else{
+            System.out.println("This is not Divisible");
+
+        }
+
+    }
+}
