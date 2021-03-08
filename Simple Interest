@@ -1,0 +1,24 @@
+package com.vinit.vijal;
+
+import java.util.Scanner;
+
+public class Simple_Interest {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter Your Principal Amount : ");
+        int principal = scan.nextInt();
+
+        System.out.print("Enter Your Rate of Interest : ");
+        float rate = scan.nextFloat();
+
+        System.out.print("Enter Your Time Period (in Years) : ");
+        float timePeriod = scan.nextFloat();
+
+        float amount = (principal * rate * timePeriod)/100 ;
+
+        System.out.println("Your Interest Amount is " + amount);
+
+
+    }
+}
