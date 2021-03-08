@@ -1,0 +1,29 @@
+package com.vinit.vijal;
+
+import java.util.Scanner;
+
+public class Maximum {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+
+
+
+        System.out.print("Enter Your First Number : ");
+        int a = scan.nextInt();
+        System.out.print("Enter Your Second Number : ");
+        int b = scan.nextInt();
+        System.out.print("Enter Your Third Number : ");
+        int c = scan.nextInt();
+
+        if (a >= b && a >= c) {
+            System.out.println(a + " is the maximum number");
+        }
+        else if (b >= a && b >= c){
+                System.out.println(b + " is the maximum number");
+            }
+        else {
+            System.out.println(c + " is the maximum mumber");
+        }
+
+    }
+}
