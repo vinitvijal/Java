@@ -1,0 +1,18 @@
+package com.vinit.vijal;
+
+import java.util.Scanner;
+
+public class Factorial {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter your Number : ");
+        int n = scan.nextInt();
+        int fac = 1;
+        for (int i = n; i > 0; i--){
+            fac *= i;
+
+        }
+        System.out.println("factorial of " + n + " is " + fac);
+        
+    }
+}
